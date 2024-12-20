@@ -1,3 +1,4 @@
+---
 dbt_example:
   target: dev
   outputs:
