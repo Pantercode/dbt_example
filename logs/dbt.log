@@ -705,3 +705,769 @@ Runtime Error
 [0m18:01:51.517046 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D04BB18E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D04BB68740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D04BAEA210>]}
 [0m18:01:51.518359 [debug] [MainThread]: Flushing usage events
 [0m18:01:52.155444 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:14:42.127412 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C3B34E9FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C3B34EA0F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C3B34EA1B0>]}
+
+
+============================== 14:14:42.172600 | 3f3f6a84-d1ce-4194-b9cb-22073935e892 ==============================
+[0m14:14:42.172600 [info ] [MainThread]: Running with dbt=1.9.1
+[0m14:14:42.174484 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\marcell.oliveira\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:14:42.280924 [info ] [MainThread]: dbt version: 1.9.1
+[0m14:14:42.280924 [info ] [MainThread]: python version: 3.12.8
+[0m14:14:42.281789 [info ] [MainThread]: python path: C:\Users\marcell.oliveira\Desktop\dbt_example\.venv\Scripts\python.exe
+[0m14:14:42.281789 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m14:14:42.282766 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | dbt_example:
+  2  |  target: dev
+  3  |     outputs:
+  4  |       dev:
+  5  |         type: bigquery
+  6  |         method: service-account
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 3, column 12
+[0m14:14:42.283790 [debug] [MainThread]: Command `dbt debug` failed at 14:14:42.283790 after 0.28 seconds
+[0m14:14:42.283790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C3B3518F80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C3B3564950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C3B2F7AAB0>]}
+[0m14:14:42.284792 [debug] [MainThread]: Flushing usage events
+[0m14:14:42.900749 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:17:30.554235 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6BC45CEC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6BC812DE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6BC8E9CD0>]}
+
+
+============================== 14:17:30.569864 | 8fd876ea-4980-4e28-8d9e-3b328f810c18 ==============================
+[0m14:17:30.569864 [info ] [MainThread]: Running with dbt=1.9.1
+[0m14:17:30.569864 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\marcell.oliveira\\.dbt', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m14:17:30.586734 [info ] [MainThread]: dbt version: 1.9.1
+[0m14:17:30.586734 [info ] [MainThread]: python version: 3.12.8
+[0m14:17:30.590462 [info ] [MainThread]: python path: C:\Users\marcell.oliveira\Desktop\dbt_example\.venv\Scripts\python.exe
+[0m14:17:30.590536 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m14:17:30.591593 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | dbt_example:
+  2  |  target: dev
+  3  |     outputs:
+  4  |       dev:
+  5  |         type: bigquery
+  6  |         method: service-account
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 3, column 12
+[0m14:17:30.592745 [debug] [MainThread]: Command `dbt debug` failed at 14:17:30.592745 after 0.11 seconds
+[0m14:17:30.592745 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6BC918E00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6BC968740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6BC8E9F70>]}
+[0m14:17:30.592745 [debug] [MainThread]: Flushing usage events
+[0m14:17:31.239508 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:18:41.492157 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1417864E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A141BEA210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A141BEA3C0>]}
+
+
+============================== 14:18:41.505196 | 632b2abd-ed76-4ab8-b3a6-828d55157388 ==============================
+[0m14:18:41.505196 [info ] [MainThread]: Running with dbt=1.9.1
+[0m14:18:41.505196 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\marcell.oliveira\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m14:18:41.526013 [info ] [MainThread]: dbt version: 1.9.1
+[0m14:18:41.526013 [info ] [MainThread]: python version: 3.12.8
+[0m14:18:41.526013 [info ] [MainThread]: python path: C:\Users\marcell.oliveira\Desktop\dbt_example\.venv\Scripts\python.exe
+[0m14:18:41.526013 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m14:18:41.530381 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | dbt_example:
+  2  |  target: dev
+  3  |     outputs:
+  4  |       dev:
+  5  |         type: bigquery
+  6  |         method: service-account
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 3, column 12
+[0m14:18:41.533483 [debug] [MainThread]: Command `dbt debug` failed at 14:18:41.533483 after 0.14 seconds
+[0m14:18:41.533483 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A14160B9B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A141C19010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A141BEA390>]}
+[0m14:18:41.533483 [debug] [MainThread]: Flushing usage events
+[0m14:18:42.223002 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:19:20.312007 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024ED8CEA180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024ED88E3860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024ED8CEA240>]}
+
+
+============================== 14:19:20.312007 | 21f2431b-e8be-495e-95ba-b70074806846 ==============================
+[0m14:19:20.312007 [info ] [MainThread]: Running with dbt=1.9.1
+[0m14:19:20.312007 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\marcell.oliveira\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:19:20.335855 [info ] [MainThread]: dbt version: 1.9.1
+[0m14:19:20.335855 [info ] [MainThread]: python version: 3.12.8
+[0m14:19:20.335855 [info ] [MainThread]: python path: C:\Users\marcell.oliveira\Desktop\dbt_example\.venv\Scripts\python.exe
+[0m14:19:20.337769 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m14:19:20.337769 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | dbt_example:
+  2  |  target: dev
+  3  |     outputs:
+  4  |       dev:
+  5  |         type: bigquery
+  6  |         method: service-account
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 3, column 12
+[0m14:19:20.340177 [debug] [MainThread]: Command `dbt debug` failed at 14:19:20.340177 after 0.13 seconds
+[0m14:19:20.340177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024ED8C11790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024ED8D150D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024ED86B2EA0>]}
+[0m14:19:20.340177 [debug] [MainThread]: Flushing usage events
+[0m14:19:20.906634 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:19:41.042553 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000272ED8EA1E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000272ED53ADE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000272ED811D90>]}
+
+
+============================== 14:19:41.042553 | d02d46de-20fc-4180-8c77-b19aff1d8865 ==============================
+[0m14:19:41.042553 [info ] [MainThread]: Running with dbt=1.9.1
+[0m14:19:41.050628 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\marcell.oliveira\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:19:41.063773 [info ] [MainThread]: dbt version: 1.9.1
+[0m14:19:41.064881 [info ] [MainThread]: python version: 3.12.8
+[0m14:19:41.065388 [info ] [MainThread]: python path: C:\Users\marcell.oliveira\Desktop\dbt_example\.venv\Scripts\python.exe
+[0m14:19:41.065388 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m14:19:41.066393 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | dbt_example:
+  2  |  target: dev
+  3  |     outputs:
+  4  |       dev:
+  5  |         type: bigquery
+  6  |         method: service-account
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 3, column 12
+[0m14:19:41.067392 [debug] [MainThread]: Command `dbt debug` failed at 14:19:41.067392 after 0.12 seconds
+[0m14:19:41.067392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000272ED4A7E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000272ED919280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000272ED53AEA0>]}
+[0m14:19:41.068393 [debug] [MainThread]: Flushing usage events
+[0m14:19:41.695298 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:26:49.851642 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFF34EA2A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFF1DAB860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFF340D280>]}
+
+
+============================== 14:26:49.867236 | 17e8d022-af3f-494d-bb2c-cc8ff1a11978 ==============================
+[0m14:26:49.867236 [info ] [MainThread]: Running with dbt=1.9.1
+[0m14:26:49.867236 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\marcell.oliveira\\.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m14:26:49.867236 [info ] [MainThread]: dbt version: 1.9.1
+[0m14:26:49.867236 [info ] [MainThread]: python version: 3.12.8
+[0m14:26:49.867236 [info ] [MainThread]: python path: C:\Users\marcell.oliveira\Desktop\dbt_example\.venv\Scripts\python.exe
+[0m14:26:49.882214 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m14:26:49.882875 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | dbt_example:
+  2  |  target: dev
+  3  |     outputs:
+  4  |       dev:
+  5  |         type: bigquery
+  6  |         method: service-account
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 3, column 12
+[0m14:26:49.886356 [debug] [MainThread]: Command `dbt debug` failed at 14:26:49.886356 after 0.11 seconds
+[0m14:26:49.886883 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFF3515040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFF340E990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFF316E360>]}
+[0m14:26:49.886883 [debug] [MainThread]: Flushing usage events
+[0m14:26:50.527678 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:30:10.584572 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001637E6EA300>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001637E156AE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001637E6EA2A0>]}
+
+
+============================== 14:30:10.600191 | c48c6bc7-c11e-4380-81f6-c1f314cf5a1b ==============================
+[0m14:30:10.600191 [info ] [MainThread]: Running with dbt=1.9.1
+[0m14:30:10.600191 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\marcell.oliveira\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug --project-dir C:\\Users\\marcell.oliveira\\Desktop\\dbt_example', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m14:30:10.615887 [info ] [MainThread]: dbt version: 1.9.1
+[0m14:30:10.615887 [info ] [MainThread]: python version: 3.12.8
+[0m14:30:10.615887 [info ] [MainThread]: python path: C:\Users\marcell.oliveira\Desktop\dbt_example\.venv\Scripts\python.exe
+[0m14:30:10.615887 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m14:30:10.615887 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | dbt_example:
+  2  |  target: dev
+  3  |     outputs:
+  4  |       dev:
+  5  |         type: bigquery
+  6  |         method: service-account
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 3, column 12
+[0m14:30:10.615887 [debug] [MainThread]: Command `dbt debug` failed at 14:30:10.615887 after 0.15 seconds
+[0m14:30:10.615887 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001637E2E3D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001637E719130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001637E6EA630>]}
+[0m14:30:10.615887 [debug] [MainThread]: Flushing usage events
+[0m14:30:11.324184 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:31:16.518350 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022F188EE330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022F172AB8C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022F1837B3B0>]}
+
+
+============================== 14:31:16.534723 | 91d4c484-ae88-4180-a99c-0532af48faee ==============================
+[0m14:31:16.534723 [info ] [MainThread]: Running with dbt=1.9.1
+[0m14:31:16.534723 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\marcell.oliveira\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug --project-dir C:\\Users\\marcell.oliveira\\Desktop\\dbt_example\\dbt_example\\dbt_project.yml', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m14:31:16.551283 [info ] [MainThread]: dbt version: 1.9.1
+[0m14:31:16.552328 [info ] [MainThread]: python version: 3.12.8
+[0m14:31:16.553338 [info ] [MainThread]: python path: C:\Users\marcell.oliveira\Desktop\dbt_example\.venv\Scripts\python.exe
+[0m14:31:16.554291 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m14:31:16.554291 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | dbt_example:
+  2  |  target: dev
+  3  |     outputs:
+  4  |       dev:
+  5  |         type: bigquery
+  6  |         method: service-account
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 3, column 12
+[0m14:31:16.556194 [debug] [MainThread]: Command `dbt debug` failed at 14:31:16.556194 after 0.13 seconds
+[0m14:31:16.556194 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022F18942330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022F18918EF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022F1891AEA0>]}
+[0m14:31:16.556194 [debug] [MainThread]: Flushing usage events
+[0m14:31:17.217186 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:35:45.881746 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018BA3CEA270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018BA3CEA300>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018BA3CEA3C0>]}
+
+
+============================== 14:35:45.881746 | 978b910d-eb1a-4db4-89d1-1544a8606ecb ==============================
+[0m14:35:45.881746 [info ] [MainThread]: Running with dbt=1.9.1
+[0m14:35:45.881746 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\marcell.oliveira\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:35:45.897515 [info ] [MainThread]: dbt version: 1.9.1
+[0m14:35:45.897515 [info ] [MainThread]: python version: 3.12.8
+[0m14:35:45.897515 [info ] [MainThread]: python path: C:\Users\marcell.oliveira\Desktop\dbt_example\.venv\Scripts\python.exe
+[0m14:35:45.908145 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m14:35:45.908824 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | dbt_example:
+  2  |  target: dev
+  3  |     outputs:
+  4  |       dev:
+  5  |         type: bigquery
+  6  |         method: service-account
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 3, column 12
+[0m14:35:45.911268 [debug] [MainThread]: Command `dbt debug` failed at 14:35:45.910004 after 0.11 seconds
+[0m14:35:45.911268 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018BA39D4560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018BA3D3D970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018BA3CEA330>]}
+[0m14:35:45.911818 [debug] [MainThread]: Flushing usage events
+[0m14:35:46.561470 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:36:07.445101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC87FEA240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC87E32DE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC87FEA2D0>]}
+
+
+============================== 14:36:07.445101 | cde13fe6-54c9-445b-b1c1-6cd6c69f1339 ==============================
+[0m14:36:07.445101 [info ] [MainThread]: Running with dbt=1.9.1
+[0m14:36:07.445101 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\marcell.oliveira\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug --profiles-dir C:\\Users\\marcell.oliveira\\.dbt', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:36:07.461665 [info ] [MainThread]: dbt version: 1.9.1
+[0m14:36:07.461665 [info ] [MainThread]: python version: 3.12.8
+[0m14:36:07.461665 [info ] [MainThread]: python path: C:\Users\marcell.oliveira\Desktop\dbt_example\.venv\Scripts\python.exe
+[0m14:36:07.461665 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m14:36:07.474778 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | dbt_example:
+  2  |  target: dev
+  3  |     outputs:
+  4  |       dev:
+  5  |         type: bigquery
+  6  |         method: service-account
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 3, column 12
+[0m14:36:07.476891 [debug] [MainThread]: Command `dbt debug` failed at 14:36:07.476891 after 0.12 seconds
+[0m14:36:07.476891 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC87ED4530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC87FEA2A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC87FEA300>]}
+[0m14:36:07.476891 [debug] [MainThread]: Flushing usage events
+[0m14:36:08.138385 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:40:51.276653 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000190419D1610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000190419D16D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000190419D1430>]}
+
+
+============================== 14:40:51.283659 | 79f3239c-7709-4ecd-9059-696ba226c133 ==============================
+[0m14:40:51.283659 [info ] [MainThread]: Running with dbt=1.8.9
+[0m14:40:51.284585 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\marcell.oliveira\\.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt compile', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:40:51.284585 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\marcell.oliveira\Desktop\dbt_example\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:40:51.286607 [debug] [MainThread]: Command `dbt compile` failed at 14:40:51.286607 after 0.10 seconds
+[0m14:40:51.287505 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001903C56B950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019041697EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000190419AFB60>]}
+[0m14:40:51.287505 [debug] [MainThread]: Flushing usage events
+[0m14:41:06.264471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209C21D1910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209C21D19D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209C21D1880>]}
+
+
+============================== 14:41:06.271185 | fa8b3515-10ba-4eaf-9829-a5c2b92c8cb7 ==============================
+[0m14:41:06.271185 [info ] [MainThread]: Running with dbt=1.8.9
+[0m14:41:06.271331 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\marcell.oliveira\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt build', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m14:41:06.272389 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\marcell.oliveira\Desktop\dbt_example\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:41:06.273728 [debug] [MainThread]: Command `dbt build` failed at 14:41:06.273728 after 0.10 seconds
+[0m14:41:06.273728 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209C20B8620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209C14DEE70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209C21D12B0>]}
+[0m14:41:06.273728 [debug] [MainThread]: Flushing usage events
+[0m14:41:27.466992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EC1161670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EBFF74560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EC102B770>]}
+
+
+============================== 14:41:27.482947 | 3b49e835-827e-47e9-bfed-3a49620b9445 ==============================
+[0m14:41:27.482947 [info ] [MainThread]: Running with dbt=1.8.9
+[0m14:41:27.482947 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\marcell.oliveira\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:41:27.482947 [info ] [MainThread]: dbt version: 1.8.9
+[0m14:41:27.482947 [info ] [MainThread]: python version: 3.12.8
+[0m14:41:27.482947 [info ] [MainThread]: python path: C:\Users\marcell.oliveira\Desktop\dbt_example\.venv\Scripts\python.exe
+[0m14:41:27.498859 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m14:41:27.499290 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | dbt_example:
+  2  |  target: dev
+  3  |     outputs:
+  4  |       dev:
+  5  |         type: bigquery
+  6  |         method: service-account
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 3, column 12
+[0m14:41:27.503446 [debug] [MainThread]: Command `dbt debug` failed at 14:41:27.503446 after 0.10 seconds
+[0m14:41:27.503446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EBBE1BCB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EC1196E40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EC14D2960>]}
+[0m14:41:27.505034 [debug] [MainThread]: Flushing usage events
+[0m14:43:38.063809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000134E18AFDA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000134E1603EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000134E18AFEC0>]}
+
+
+============================== 14:43:38.065315 | dae7583d-21f1-4fed-a63a-a0f3de7da972 ==============================
+[0m14:43:38.065315 [info ] [MainThread]: Running with dbt=1.8.9
+[0m14:43:38.065315 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\marcell.oliveira\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:43:38.085802 [info ] [MainThread]: dbt version: 1.8.9
+[0m14:43:38.085802 [info ] [MainThread]: python version: 3.12.8
+[0m14:43:38.086802 [info ] [MainThread]: python path: C:\Users\marcell.oliveira\Desktop\dbt_example\.venv\Scripts\python.exe
+[0m14:43:38.086802 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m14:43:38.087801 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | dbt_example:
+  2  |  target: dev
+  3  |     outputs:
+  4  |       dev:
+  5  |         type: bigquery
+  6  |         method: service-account
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 3, column 12
+[0m14:43:38.089903 [debug] [MainThread]: Command `dbt debug` failed at 14:43:38.089903 after 0.11 seconds
+[0m14:43:38.089903 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000134E161E000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000134E1942C00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000134DC0FBCB0>]}
+[0m14:43:38.089903 [debug] [MainThread]: Flushing usage events
+[0m14:45:18.700214 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000145C95AFEF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000145C95AFF80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000145C95AFAD0>]}
+
+
+============================== 14:45:18.710623 | 83db1d84-7b60-459c-a2b7-73ce8512601f ==============================
+[0m14:45:18.710623 [info ] [MainThread]: Running with dbt=1.8.9
+[0m14:45:18.711570 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\marcell.oliveira\\.dbt', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m14:45:18.724681 [info ] [MainThread]: dbt version: 1.8.9
+[0m14:45:18.726070 [info ] [MainThread]: python version: 3.12.8
+[0m14:45:18.726563 [info ] [MainThread]: python path: C:\Users\marcell.oliveira\Desktop\dbt_example\.venv\Scripts\python.exe
+[0m14:45:18.726563 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m14:45:18.727569 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | dbt_example:
+  2  |  target: dev
+  3  |     outputs:
+  4  |       dev:
+  5  |         type: bigquery
+  6  |         method: service-account
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 3, column 12
+[0m14:45:18.731276 [debug] [MainThread]: Command `dbt debug` failed at 14:45:18.731050 after 0.15 seconds
+[0m14:45:18.731276 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000145C95AFAD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000145C9487EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000145C9296E70>]}
+[0m14:45:18.731276 [debug] [MainThread]: Flushing usage events
+[0m14:45:50.860149 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022F0D1AFD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022F0D1AFCE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022F0D1AFDA0>]}
+
+
+============================== 14:45:50.860149 | 9c406589-1bb5-4884-a3e9-58db379ba4e9 ==============================
+[0m14:45:50.860149 [info ] [MainThread]: Running with dbt=1.8.9
+[0m14:45:50.860149 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\marcell.oliveira\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:45:50.881799 [info ] [MainThread]: dbt version: 1.8.9
+[0m14:45:50.881799 [info ] [MainThread]: python version: 3.12.8
+[0m14:45:50.881799 [info ] [MainThread]: python path: C:\Users\marcell.oliveira\Desktop\dbt_example\.venv\Scripts\python.exe
+[0m14:45:50.886775 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m14:45:50.887785 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | dbt_example:
+  2  |  target: dev
+  3  |     outputs:
+  4  |       dev:
+  5  |         type: bigquery
+  6  |         method: service-account
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 3, column 12
+[0m14:45:50.889509 [debug] [MainThread]: Command `dbt debug` failed at 14:45:50.889509 after 0.11 seconds
+[0m14:45:50.889509 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022F0D08BAD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022F0CF5BD70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022F0D1D2930>]}
+[0m14:45:50.889509 [debug] [MainThread]: Flushing usage events
+[0m14:46:12.126813 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234A3CAFF50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234A3CAFAD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234A3CAFFB0>]}
+
+
+============================== 14:46:12.130556 | 0de55791-e438-4db9-be90-bba85a225b68 ==============================
+[0m14:46:12.130556 [info ] [MainThread]: Running with dbt=1.8.9
+[0m14:46:12.130556 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\marcell.oliveira\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:46:12.145579 [info ] [MainThread]: dbt version: 1.8.9
+[0m14:46:12.147028 [info ] [MainThread]: python version: 3.12.8
+[0m14:46:12.147499 [info ] [MainThread]: python path: C:\Users\marcell.oliveira\Desktop\dbt_example\.venv\Scripts\python.exe
+[0m14:46:12.147883 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m14:46:12.148915 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | dbt_example:
+  2  |  target: dev
+  3  |     outputs:
+  4  |       dev:
+  5  |         type: bigquery
+  6  |         method: service-account
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 3, column 12
+[0m14:46:12.151984 [debug] [MainThread]: Command `dbt debug` failed at 14:46:12.151984 after 0.11 seconds
+[0m14:46:12.151984 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234A397C7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234A3CAFFB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234A3D42C00>]}
+[0m14:46:12.151984 [debug] [MainThread]: Flushing usage events
+[0m14:50:31.538049 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001705BA59670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001705BA01B20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001705BCAFEF0>]}
+
+
+============================== 14:50:31.545527 | c4626ece-fc75-4370-81a9-93b51cefd73a ==============================
+[0m14:50:31.545527 [info ] [MainThread]: Running with dbt=1.8.9
+[0m14:50:31.546541 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\marcell.oliveira\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m14:50:31.560529 [info ] [MainThread]: dbt version: 1.8.9
+[0m14:50:31.561529 [info ] [MainThread]: python version: 3.12.8
+[0m14:50:31.562625 [info ] [MainThread]: python path: C:\Users\marcell.oliveira\Desktop\dbt_example\.venv\Scripts\python.exe
+[0m14:50:31.563633 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m14:50:31.564634 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | dbt_example:
+  2  |  target: dev
+  3  |     outputs:
+  4  |       dev:
+  5  |         type: bigquery
+  6  |         method: service-account
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 3, column 12
+[0m14:50:31.566189 [debug] [MainThread]: Command `dbt debug` failed at 14:50:31.566189 after 0.15 seconds
+[0m14:50:31.567293 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001705BA59670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001705BCD2A80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001705AA602C0>]}
+[0m14:50:31.567293 [debug] [MainThread]: Flushing usage events
+[0m15:10:01.798062 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B456DAFF50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B45678B3B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B456DAFAD0>]}
+
+
+============================== 15:10:01.798062 | 982913fe-3fec-4e31-be8b-ebad1b3f2ac2 ==============================
+[0m15:10:01.798062 [info ] [MainThread]: Running with dbt=1.8.9
+[0m15:10:01.798062 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\marcell.oliveira\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:10:01.810169 [info ] [MainThread]: dbt version: 1.8.9
+[0m15:10:01.810169 [info ] [MainThread]: python version: 3.12.8
+[0m15:10:01.810169 [info ] [MainThread]: python path: C:\Users\marcell.oliveira\Desktop\dbt_example\.venv\Scripts\python.exe
+[0m15:10:01.819565 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m15:10:01.820315 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | dbt_example:
+  2  |  target: dev
+  3  |     outputs:
+  4  |       dev:
+  5  |         type: bigquery
+  6  |         method: service-account
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 3, column 12
+[0m15:10:01.822439 [debug] [MainThread]: Command `dbt debug` failed at 15:10:01.822439 after 0.11 seconds
+[0m15:10:01.822941 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B45678BFE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B456E48260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B456A05A00>]}
+[0m15:10:01.822941 [debug] [MainThread]: Flushing usage events
+[0m15:11:19.590241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000174F40AFC80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000174F40AFD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000174F40AFD70>]}
+
+
+============================== 15:11:19.590241 | f7900eb1-8495-46a1-aadd-cec40b3732ae ==============================
+[0m15:11:19.590241 [info ] [MainThread]: Running with dbt=1.8.9
+[0m15:11:19.590241 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\marcell.oliveira\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:11:19.611839 [info ] [MainThread]: dbt version: 1.8.9
+[0m15:11:19.611839 [info ] [MainThread]: python version: 3.12.8
+[0m15:11:19.616142 [info ] [MainThread]: python path: C:\Users\marcell.oliveira\Desktop\dbt_example\.venv\Scripts\python.exe
+[0m15:11:19.616549 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m15:11:19.616549 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | dbt_example:
+  2  |  target: dev
+  3  |     outputs:
+  4  |       dev:
+  5  |         type: bigquery
+  6  |         method: service-account
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 3, column 12
+[0m15:11:19.618558 [debug] [MainThread]: Command `dbt debug` failed at 15:11:19.618558 after 0.12 seconds
+[0m15:11:19.619555 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000174F3D97FB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000174F2FC54C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000174F40AFE00>]}
+[0m15:11:19.619555 [debug] [MainThread]: Flushing usage events
+[0m15:12:25.210005 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED54BAFDD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED54BAFF80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED54BAFFE0>]}
+
+
+============================== 15:12:25.214620 | 4d2098bc-73f9-4e61-b6c0-d4771ccdb187 ==============================
+[0m15:12:25.214620 [info ] [MainThread]: Running with dbt=1.8.9
+[0m15:12:25.214620 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\marcell.oliveira\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:12:25.232148 [info ] [MainThread]: dbt version: 1.8.9
+[0m15:12:25.232148 [info ] [MainThread]: python version: 3.12.8
+[0m15:12:25.238699 [info ] [MainThread]: python path: C:\Users\marcell.oliveira\Desktop\dbt_example\.venv\Scripts\python.exe
+[0m15:12:25.238699 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m15:12:25.238699 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | dbt_example:
+  2  |  target: dev
+  3  |     outputs:
+  4  |       dev:
+  5  |         type: bigquery
+  6  |         method: service-account
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 3, column 12
+[0m15:12:25.245116 [debug] [MainThread]: Command `dbt debug` failed at 15:12:25.245116 after 0.15 seconds
+[0m15:12:25.245116 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED54E24140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED4F748230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED54AB8590>]}
+[0m15:12:25.246226 [debug] [MainThread]: Flushing usage events
+[0m15:13:25.551129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAF3CAFF20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAF3CAFEF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAF3CAFFE0>]}
+
+
+============================== 15:13:25.557766 | 747bd3fc-0f46-4c5d-ac46-1df8204cf8b4 ==============================
+[0m15:13:25.557766 [info ] [MainThread]: Running with dbt=1.8.9
+[0m15:13:25.557766 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\marcell.oliveira\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:13:25.557766 [info ] [MainThread]: dbt version: 1.8.9
+[0m15:13:25.557766 [info ] [MainThread]: python version: 3.12.8
+[0m15:13:25.557766 [info ] [MainThread]: python path: C:\Users\marcell.oliveira\Desktop\dbt_example\.venv\Scripts\python.exe
+[0m15:13:25.572543 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m15:13:25.573500 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | dbt_example:
+  2  |  target: dev
+  3  |     outputs:
+  4  |       dev:
+  5  |         type: bigquery
+  6  |         method: service-account
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 3, column 12
+[0m15:13:25.576667 [debug] [MainThread]: Command `dbt debug` failed at 15:13:25.576667 after 0.11 seconds
+[0m15:13:25.576667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAEE53B020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAF3997230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAF35F14C0>]}
+[0m15:13:25.576667 [debug] [MainThread]: Flushing usage events
+[0m15:15:06.696479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4B82AFF20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4B82AFEF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4B82AFAD0>]}
+
+
+============================== 15:15:06.702041 | c498fabe-cccb-491c-bbfe-d927be290345 ==============================
+[0m15:15:06.702041 [info ] [MainThread]: Running with dbt=1.8.9
+[0m15:15:06.702041 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\marcell.oliveira\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:15:06.702041 [info ] [MainThread]: dbt version: 1.8.9
+[0m15:15:06.702041 [info ] [MainThread]: python version: 3.12.8
+[0m15:15:06.702041 [info ] [MainThread]: python path: C:\Users\marcell.oliveira\Desktop\dbt_example\.venv\Scripts\python.exe
+[0m15:15:06.702041 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m15:15:06.702041 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | dbt_example:
+  2  |  target: dev
+  3  |     outputs:
+  4  |       dev:
+  5  |         type: bigquery
+  6  |         method: service-account
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 3, column 12
+[0m15:15:06.718701 [debug] [MainThread]: Command `dbt debug` failed at 15:15:06.717804 after 0.12 seconds
+[0m15:15:06.718701 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4B81878C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4B82AFEF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4B83241D0>]}
+[0m15:15:06.718701 [debug] [MainThread]: Flushing usage events
+[0m15:21:34.419268 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021BFC1D11F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021BFBF578C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021BFC1D00B0>]}
+
+
+============================== 15:21:34.425951 | 06791906-d9de-4bcc-bdd9-9081290b241d ==============================
+[0m15:21:34.425951 [info ] [MainThread]: Running with dbt=1.8.9
+[0m15:21:34.426833 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\marcell.oliveira\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:21:34.438917 [info ] [MainThread]: dbt version: 1.8.9
+[0m15:21:34.438917 [info ] [MainThread]: python version: 3.12.8
+[0m15:21:34.438917 [info ] [MainThread]: python path: C:\Users\marcell.oliveira\Desktop\dbt_example\.venv\Scripts\python.exe
+[0m15:21:34.439857 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m15:21:34.439857 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | dbt_example:
+  2  |  target: dev
+  3  |     outputs:
+  4  |       dev:
+  5  |         type: bigquery
+  6  |         method: service-account
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 3, column 12
+[0m15:21:34.440864 [debug] [MainThread]: Command `dbt debug` failed at 15:21:34.440864 after 0.11 seconds
+[0m15:21:34.441927 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021BF6B2B020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021BFC0B8590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021BFBF017C0>]}
+[0m15:21:34.441927 [debug] [MainThread]: Flushing usage events
+[0m15:23:07.008001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B5FF0AFF50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B5FEDCF8C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B5FF0AFEF0>]}
+
+
+============================== 15:23:07.008819 | 72d0324c-e818-4b03-9223-4ea0776bf6f3 ==============================
+[0m15:23:07.008819 [info ] [MainThread]: Running with dbt=1.8.9
+[0m15:23:07.008819 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\marcell.oliveira\\.dbt', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:23:07.030951 [info ] [MainThread]: dbt version: 1.8.9
+[0m15:23:07.032027 [info ] [MainThread]: python version: 3.12.8
+[0m15:23:07.032027 [info ] [MainThread]: python path: C:\Users\marcell.oliveira\Desktop\dbt_example\.venv\Scripts\python.exe
+[0m15:23:07.032027 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m15:23:07.033557 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | dbt_example:
+  2  |  target: dev
+  3  |     outputs:
+  4  |       dev:
+  5  |         type: bigquery
+  6  |         method: service-account
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 3, column 12
+[0m15:23:07.035511 [debug] [MainThread]: Command `dbt debug` failed at 15:23:07.035511 after 0.12 seconds
+[0m15:23:07.035511 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B5FEDCF8C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B5FEFB88C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B5FF143320>]}
+[0m15:23:07.035511 [debug] [MainThread]: Flushing usage events
+[0m15:27:17.780142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000190125AFD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019012303EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000190125AFC80>]}
+
+
+============================== 15:27:17.795758 | d99f8609-918f-485f-b07d-8b40457da4eb ==============================
+[0m15:27:17.795758 [info ] [MainThread]: Running with dbt=1.8.9
+[0m15:27:17.795758 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\marcell.oliveira\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt debug', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:27:17.795758 [info ] [MainThread]: dbt version: 1.8.9
+[0m15:27:17.795758 [info ] [MainThread]: python version: 3.12.8
+[0m15:27:17.795758 [info ] [MainThread]: python path: C:\Users\marcell.oliveira\Desktop\dbt_example\.venv\Scripts\python.exe
+[0m15:27:17.795758 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m15:27:17.795758 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | dbt_example:
+  2  |  target: dev
+  3  |     outputs:
+  4  |       dev:
+  5  |         type: bigquery
+  6  |         method: service-account
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 3, column 12
+[0m15:27:17.811414 [debug] [MainThread]: Command `dbt debug` failed at 15:27:17.811414 after 0.12 seconds
+[0m15:27:17.811414 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001900CEDB020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019012445640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000190118F6E70>]}
+[0m15:27:17.811414 [debug] [MainThread]: Flushing usage events
+[0m15:29:56.396713 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0EED2F3E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0F1764560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0F22B7140>]}
+
+
+============================== 15:29:56.400729 | a1ab654c-1908-4b50-bf18-92fc2856b999 ==============================
+[0m15:29:56.400729 [info ] [MainThread]: Running with dbt=1.8.9
+[0m15:29:56.400729 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\marcell.oliveira\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m15:29:56.400729 [info ] [MainThread]: dbt version: 1.8.9
+[0m15:29:56.416365 [info ] [MainThread]: python version: 3.12.8
+[0m15:29:56.416365 [info ] [MainThread]: python path: C:\Users\marcell.oliveira\Desktop\dbt_example\.venv\Scripts\python.exe
+[0m15:29:56.416365 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m15:29:56.416365 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | dbt_example:
+  2  |  target: dev
+  3  |     outputs:
+  4  |       dev:
+  5  |         type: bigquery
+  6  |         method: service-account
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 3, column 12
+[0m15:29:56.416365 [debug] [MainThread]: Command `dbt debug` failed at 15:29:56.416365 after 0.11 seconds
+[0m15:29:56.416365 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0F2100AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0F2222FF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0F2494290>]}
+[0m15:29:56.416365 [debug] [MainThread]: Flushing usage events
+[0m15:36:43.283659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9CF6AFE30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9CF6AFE00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9CF6AFD70>]}
+
+
+============================== 15:36:43.291661 | 57d72d45-c339-4fdd-a642-6960c8981e43 ==============================
+[0m15:36:43.291661 [info ] [MainThread]: Running with dbt=1.8.9
+[0m15:36:43.293662 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\marcell.oliveira\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m15:36:43.306660 [info ] [MainThread]: dbt version: 1.8.9
+[0m15:36:43.307670 [info ] [MainThread]: python version: 3.12.8
+[0m15:36:43.308615 [info ] [MainThread]: python path: C:\Users\marcell.oliveira\Desktop\dbt_example\.venv\Scripts\python.exe
+[0m15:36:43.309624 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m15:36:43.310702 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | dbt_example:
+  2  |  target: dev
+  3  |     outputs:
+  4  |       dev:
+  5  |         type: bigquery
+  6  |         method: service-account
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 3, column 12
+[0m15:36:43.310702 [debug] [MainThread]: Command `dbt debug` failed at 15:36:43.310702 after 0.14 seconds
+[0m15:36:43.315073 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9CFA28260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9CF6D2A80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9CF4FD5E0>]}
+[0m15:36:43.315073 [debug] [MainThread]: Flushing usage events
